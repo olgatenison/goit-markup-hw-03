@@ -133,9 +133,7 @@ body {
 /*------------hero-------------*/
 .hero{
     background-color: var(--background-secondary-color);
-    text-align: center;
-    
-    
+    text-align: center; 
 }
 .hero-title {
     font-family: Roboto;
@@ -150,7 +148,6 @@ body {
     max-width: 696px;
     margin-bottom: 30px;
     padding-top: 200px;
-    
 }
 
 .hero-btn { 
@@ -174,13 +171,13 @@ body {
 .advantage-list{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     margin-left: -30px;
 
 }
 .advantage-item {
     margin-left: 30px;
-    width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
 }
 .advantage-theme{
     font-weight: 700;
@@ -210,11 +207,14 @@ body {
 .gallery-list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: -30px;
 }
+
 .gallery-item{
     margin-left: 30px;
-    width: 370px;
+    /*width: 370px;*/
+    flex-basis: calc((100% - 90px) / 3);
 }
 /*--------------команда-----------*/
 .team{
@@ -231,13 +231,21 @@ body {
 }
 .team-list{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     margin-left: -30px;
 }
 .team-item{
     margin-left: 30px;
-    width: 270px;
+    /*width: 270px;*/
+    flex-basis: calc(100% / 4 - 30px);
     
+}
+.team-card-contant{
+    padding: 30px 58px;
+    background-color: var(--background-main-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-item-name {
     font-weight: 500;
@@ -247,9 +255,7 @@ body {
     color: var(--secondary-title-color);
     background-color: var(--background-main-color);
 
-    margin-top: 30px;
     margin-bottom: 10px;
-
 }
 .team-item-text {
     font-size: 16px;
@@ -262,12 +268,23 @@ body {
 }
 
 /*--------------портфолио-----------*/
- 
+.portfolio-options-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 .portfolio-btn{
     font-weight: 500;
     background-color: var(--btm-primary-color);
     line-height: 1.62;
-    
+    padding: 6px 22px;
+    margin-bottom: 50px;
+
+}
+
+.portfolio-options-item:not(:last-child){
+    margin-right: 8px;
 }
 
 .portfolio-btn:hover,
@@ -276,19 +293,37 @@ body {
     color:#FFFFFF;
     background-color: var(--accent-color);
 }
+.portfolio-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.portfolio-product-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+}
+.product-content{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+}
 .portfolio-name{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--primary-text-color);
+
+    margin-top: 20px;
 }
 .portfolio-text {
     font-size: 16px;
     line-height: 1.87;
     color: var(--secondary-text-color);
-
 }
+
 /*--------------footer-----------*/
 .footer {
     background-color: var(--background-secondary-color);
