@@ -77,7 +77,7 @@ body {
     font-weight: 700;
     line-height: 1.19;
     color: var(--accent-color);
-    margin-right: 94px;
+    margin-right: 93px;
 }
 
 .logo-accent {
@@ -128,9 +128,8 @@ body {
 /*------------hero-------------*/
 .hero{
     background-color: var(--background-secondary-color);
-    ;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    text-align: center;
+    
     
 }
 .hero-title {
@@ -139,22 +138,27 @@ body {
     font-weight: 900;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-align: center;
     text-transform: uppercase;
     color: var(--primary-title-color);
+
+    margin: 0 auto;
     max-width: 696px;
-
-    padding-bottom: 30px;
-
+    margin-bottom: 30px;
+    padding-top: 200px;
+    
 }
 
 .hero-btn { 
-    color: #FFFFFF;
+    color: var(--primary-title-color);
     font-weight: 700;
+    padding: 10px 32px;
     background-color: var(--accent-color);
+
     display: inline-block;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 200px;
 }
 .hero-btn:hover,
 .hero-btn:focus{
