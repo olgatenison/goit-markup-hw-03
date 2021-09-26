@@ -20,6 +20,10 @@ h6 {
     margin: 0;
 }
 
+a {
+    display:block;
+}
+
 ul{
     margin: 0;
     padding-left: 0;
@@ -218,8 +222,7 @@ body {
 /*--------------галерея-----------*/
 .gallery{
     padding-top: 0;
-    margin-top: -30px;
-   
+       
 }
 .gallery-title {
     font-weight: 700;
@@ -228,8 +231,8 @@ body {
     text-align: center;
     color: var(--secondary-title-color);
     margin-bottom: 50px;
-    margin-top: 30px;
 }
+
 .gallery-list{
     display: flex;
     flex-wrap: wrap;
