@@ -277,7 +277,7 @@ body {
 .team-card-contant{
     padding: 30px 58px;
     background-color: var(--background-main-color);
-    
+    border-radius: 0px 0px 4px 4px;
 }
 .team-item-name {
     font-weight: 500;
